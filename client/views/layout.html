@@ -1,0 +1,7 @@
+<template name="layout">
+  {{> header}}
+  {{#if deviceready}}
+    {{yield}}
+  {{/if}}
+  {{> footer}}
+</template>
