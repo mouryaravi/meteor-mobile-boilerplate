@@ -2,10 +2,12 @@ Session.setDefault('cordovaReady', false);
 document.addEventListener("deviceready",
   ()->
     Session.set 'cordovaReady', true
- false
+    Session.set 'currentTemplate', 'home'
+  false
 )
 
+
 Template.layout.helpers
-  'deviceready': ()->
-    alert 'Device Ready!'
-    Session.get('cordovaReady')
+  homeTemplate: ()->
+    (Session.get 'currentTemplate') == 'home'
+

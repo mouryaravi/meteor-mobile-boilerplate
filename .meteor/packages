@@ -6,7 +6,6 @@
 autopublish
 insecure
 preserve-inputs
-iron-router
 coffeescript
 packmeteor
 appcache

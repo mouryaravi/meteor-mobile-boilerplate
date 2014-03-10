@@ -1,7 +1,13 @@
+<body>
+{{> header}}
+  {{> layout}}
+{{> footer}}
+</body>
+
 <template name="layout">
-  {{> header}}
-  {{#if deviceready}}
-    {{yield}}
+  {{#if homeTemplate}}
+    {{> home }}
+  {{else}}
+    {{> newTask }}
   {{/if}}
-  {{> footer}}
 </template>

@@ -3,4 +3,8 @@ Template.newTask.events
     event.preventDefault()
     Tasks.insert
       'title': $('#newTaskTitle').val()
-    Router.go 'home'
+    Session.set 'currentTemplate', 'home'
+
+  'click .home': (event)->
+    event.preventDefault()
+    Session.set 'currentTemplate', 'home'
