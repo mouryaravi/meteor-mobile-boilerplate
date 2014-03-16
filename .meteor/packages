@@ -7,6 +7,9 @@ autopublish
 insecure
 preserve-inputs
 coffeescript
-packmeteor
-appcache
 standard-app-packages
+accounts-facebook
+accounts-base
+accounts-ui
+appcache
+packmeteor
